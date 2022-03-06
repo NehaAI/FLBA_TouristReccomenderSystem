@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Georgia Tourist Bureau</title>
+</head>
+<body>
+<!  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>Thanks for visiting the lovely peach state of Georgia!<br> 
+    Please input your preferences to be provided with 
+    appropriate tourist recommendations!
+</h1>
+
+<form action="/userpreference", method="get">
+    <font size="+2>"
+  <label for="age">Age: </label>
+  <input type="number" id="age" name="age"><br><br>
+  <label for="gender">Gender (Please enter M or F): </label>
+  <input type="text" id="gender" name="gender"><br><br>
+  <label for="out">Do you enjoy the outdoors? Please enter Y or N: </label>
+  <input type="text" id="out" name="out"><br><br>
+  <label for="kids">Are their kids in the party? Please enter Y or N: </label>
+  <input type="text" id="kids" name="kids"><br><br>
+  <label for="city">Choose a city: </label>
+  <select id="city" name="city">
+      <option value="Atlanta">Atlanta</option>
+      <option value="Savannah">Savannah</option>
+      <option value="Augusta">Augusta</option>
+      <option value="Macon">Macon</option><br><br>
+  <input type="submit" value="Submit">
+    </font>
+</form>
+
+<p>Click on the submit button to submit the form.</p>
+</body>
+</html>
+
+</body>
+</html>
